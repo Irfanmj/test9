@@ -51,9 +51,9 @@ public class delServlet extends HttpServlet {
 	   
 	   	 try 
 	   	 {
-	            Class.forName("com.mysql.jdbc.Driver");
-	            
-	            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_gryffindor","root","");
+	            Class.forName("org.postgresql.Driver");
+
+            	    Connection conn = DriverManager.getConnection("jdbc:postgresql://ec2-54-204-128-96.compute-1.amazonaws.com:5432/dclgjbnt12qtde","bxatgjnyrydewa","57c8fed2ad071c2ff13fc104aba11684990d8cd93839b01631db30ea46640cb3");
 	            Statement st = conn.createStatement();
 	           
 	            String sql = "DELETE FROM product WHERE pID = " + username + "";
