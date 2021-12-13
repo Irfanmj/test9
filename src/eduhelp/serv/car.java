@@ -53,12 +53,13 @@ public class car extends HttpServlet {
         //String fileLicense = request.getParameter("fileLicense"); 
         try {
 		
-		Class.forName("org.postgresql.Driver");
-
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://ec2-54-204-128-96.compute-1.amazonaws.com:5432/dclgjbnt12qtde","bxatgjnyrydewa","57c8fed2ad071c2ff13fc104aba11684990d8cd93839b01631db30ea46640cb3");
+	String DB_DRIVER = "org.postgresql.Driver";
+	String DB_HOST = "jdbc:postgresql://ec2-3-211-228-251.compute-1.amazonaws.com:5432" + "/d62s3r1ojavllj";
+	String DB_USER = "geuftdhfelyjre";
+	String DB_PASSWORD = "c8433b9dc0d4d4d9ec13f2a67b6c708e71cf96a24288fcf71ecbe899f03e3ffa";
 
        
-
+		
            Statement st = conn.createStatement();
 
             String sql = "insert into customer(custIC,custName,custUname,custPassword,custEmail,custPhoneNum,custAddress) values('"+custIC+"','"+custName+"','"+custUname+"','"+custPassword+"','"+custEmail+"','"+custPhoneNum+"','"+custAddress+"')";
