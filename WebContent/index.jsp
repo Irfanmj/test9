@@ -10,7 +10,7 @@
 <h1>4Wheel Car Rental</h1>
 <h1>Register</h1>
 
-<form action="firstdbserv" method="Post">
+<form action="car" method="Post">
 		IC Number :<input type="text" name="custIC"><br><br> 
         Name : <input type="text" name="custName"><br><br>    
         User Name : <input type="text" name="custUname"><br><br>
