@@ -59,7 +59,7 @@ public class car extends HttpServlet {
 
             Statement st = conn.createStatement();
 
-            String sql = "insert into customer (custIC,custName,custUname,custPassword,custEmail,custPhoneNum,custAddress) values('"+custIC+"','"+custName+"','"+custUname+"','"+custPassword+"','"+custEmail+"','"+custPhoneNum+"','"+custAddress+"')";
+            String sql = "insert into customer(custIC,custName,custUname,custPassword,custEmail,custPhoneNum,custAddress) values('"+custIC+"','"+custName+"','"+custUname+"','"+custPassword+"','"+custEmail+"','"+custPhoneNum+"','"+custAddress+"')";
 
             st.executeUpdate(sql);
             out.println("Data is Successfully Inserted into customer Table");
